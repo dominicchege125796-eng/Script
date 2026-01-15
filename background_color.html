@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="first.css"> 
+        <link rel="phpsheet" href="tree.php">           
+    </head>
+    <header>
+        <h1>Dominic Chege</h1>
+        <h2>Buttons to change the backgroundColor</h2>
+        <button class="back" id="skyblue"><strong>Skyblue</strong></button> <br>
+        <button class="back" id="user"><strong>User</strong></button>
+    </header>
+    <body>
+        <p>A web page that displays either un-ordered list and ordered lists.
+            <div><h2>Un-Ordered List</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p id="result"></p>
+            </div>
+            <div><h2>Ordered List</h2>
+                <ol>
+                    <li>C`</li>
+                    <li>C++</li>
+                    <li>JAVA</li>
+                </ol>
+            </div>
+        </p>        
+    </body>
+    <script>
+        document.getElementById("skyblue").addEventListener('click' , () => {
+            document.body.style.backgroundColor = "skyblue"
+            
+        })
+        const results = document.getElementById("result")
+        document.getElementById("user").addEventListener('click' , () => {
+            document.body.style.backgroundColor = "lightgrey"
+            
+        })
+    </script>
+    <footer>
+        <p>©️ 2026 WebDdesign Student</p>
+    </footer>
+</html>
